@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>fullPage.js A simple Demo</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage very simple demo." />
+	<meta name="keywords"  content="fullpage,jquery,demo,simple" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="../dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/reset.css">
+</head>
+<body>
+
+
+<!-- <select id="demosMenu">
+    <option selected>Choose Demo</option>
+    <option id="simple">Simple</option>
+    <option id="custom-arrows">Custom arrows</option>
+    <option id="hide-sections">Hide sections</option>
+    <option id="scroll-after-fullpage">Scroll after fullpage</option>
+    <option id="observer">Observer</option>
+    <option id="jquery-adapter">jQuery adapter</option>
+    <option id="active-slide">Active section and slide</option>
+    <option id="auto-height">Auto height</option>
+    <option id="autoplay-video-and-audio">Autoplay Video and Audio</option>
+    <option id="backgrounds">Background images</option>
+    <option id="backgrounds-fixed">Fixed fullscreen backgrounds</option>
+    <option id="background-video">Background video</option>
+    <option id="callbacks">Callbacks</option>
+    <option id="continuous-horizontal">Continuous horizontal (paid)</option>
+    <option id="continuous-vertical">Continuous vertical</option>
+    <option id="parallax">Parallax (paid)</option>
+    <option id="cards">Cards 3d (paid)</option>
+    <option id="water-effect">Water effect (paid)</option>
+    <option id="drop-effect">Drop effect (paid)</option>
+    <option id="css3">CSS3</option>
+    <option id="drag-and-move">Drag And Move (paid)</option>
+    <option id="easing-css3">Easing CSS</option>
+    <option id="easing-js">Easing JS</option>
+    <option id="fading-effect">Fading Effect (paid)</option>
+    <option id="fixed-headers">Fixed headers</option>
+    <option id="gradient-backgrounds">Gradient backgrounds</option>
+    <option id="interlocked-slides">Interlocked Slides (paid)</option>
+    <option id="looping">Looping</option>
+    <option id="methods">Methods</option>
+    <option id="navigation-vertical">Vertical navigation dots</option>
+    <option id="navigation-horizontal">Horizontal navigation dots</option>
+    <option id="navigation-tooltips">Navigation tooltips</option>
+    <option id="no-anchor">No anchor links</option>
+    <option id="normal-scroll">Normal scrolling</option>
+    <option id="normalScrollElements">Normal scroll elements</option>
+    <option id="offset-sections">Offset sections (paid)</option>
+    <option id="one-section">One single section</option>
+    <option id="reset-sliders">Reset sliders (paid)</option>
+    <option id="responsive-auto-height">Responsive Auto Height</option>
+    <option id="responsive-height">Responsive Height</option>
+    <option id="responsive-width">Responsive Width</option>
+    <option id="responsive-slides">Responsive Slides (paid)</option>
+    <option id="scrollBar">Scroll bar enabled</option>
+    <option id="scroll-horizontally">Scroll horizontally (paid)</option>
+    <option id="scrollOverflow">Scroll inside sections and slides</option>
+    <option id="scrollOverflow-reset">ScrollOverflow Reset (paid)</option>
+    <option id="lazy-load">Lazy load</option>
+    <option id="scrolling-speed">Scrolling speed</option>
+    <option id="trigger-animations">Trigger animations</option>
+    <option id="vue-fullpage">Vue component</option>
+    <option id="react-fullpage">React component</option>
+    <option id="angular-fullpage">Angular component</option>
+  </select> -->
+
+<div id="fullpage">
+	<div class="section active" id="section0">
+        <div class="logo-introduction">
+            <div class="logo">
+                <img src="images/yogo-logo.svg">
+            </div>
+            <div class="introduction">
+                <h3>편안한 시차 계산 리마인더</h3>
+                <h3>모든 나라의 시차 계산 알람 어플 YOGO</h3>
+            </div>
+        </div>
+        <div class="download">
+            <button type="button" onclick="location.href = 'https://www.naver.com/'">YOGO 시작하기 </button>
+        </div>
+        <div class="overview">
+            <div class="overview-title">
+                <h3>Overview</h3>
+            </div>
+            <div class="overview-content">
+                <p>코로나로 인해 여러 나라의 사람들과 협업을 많이 하게됩니다. 회의 시간을 잡을때, 보통 어떻게 하시나요?</p>
+                <p>
+                우리나라 시간에 맞추어 다른 나라들의 시간을 일일이 확인해야합니다.
+                </p>
+                <p>
+                YOGO는 이러한 불편함을 해소해주는 시차 계산 알람 서비스입니다.
+                </p>
+                
+            </div> 
+        </div>
+    </div>
+	<div class="section" id="section1">
+        <div class="title">
+            <h3>Problem</h3>
+        </div>
+        <div class="chat-bubble-area">
+            <div class="left-bubble-area">
+                <div class="left-person">
+                    <img src="images/left-person.svg">
+                    <div class="left-bubble">
+                        <div class="left-bubble-text"> 계속 시차 계산하기 귀찮은걸</div>
+                    </div>
+                </div>
+                <div class="person-explanation">EPL을 좋아하는 김수현씨</div>
+            </div>
+            <div class="right-bubble-area">
+                <div class="right-person">
+                    <img src="images/right-person.svg">
+                    <div class="right-bubble">
+                        <div class="right-bubble-text">여러 회의를 시차에 따라 정리해주는 서비스 없나?</div>
+                    </div>
+                </div>
+                <div class="person-explanation">해외 사람들과 협업을 자주하는 최유진씨</div>
+            </div>
+        </div> 
+        <div class="problem-explanation">
+            <p>
+                여러 나라의 사람들과 회의를 진행하거나, 영국에서 하는 축구 경기를 한국에서 보고싶을 때! 
+                우리는 일일이 그 시간대의 시간을 찾아야했습니다.
+            </p>
+        </div>
+	</div>
+	<div class="section" id="section2">
+        <div class="title">
+            <h3>Solution</h3>
+        </div>
+        <div class="solution-area">
+            <div class="as-is-area">
+                <div class="as-is">as is</div>
+                <div class="as-is-explanation">시차가 다른 도시의 사람들과 협업을 위해서 일일이 계산해야 한다</div>
+                <div class="as-is-explanation">여러 날의 많은 일정이 정리가 안 되어있다</div>
+                <div class="as-is-explanation">기존의 시계 앱은 현재 시간의 다른 나라 시간만 확인할 수 있다</div>
+            </div>
+            <div class="to-be-area">
+                <div class="to-be">as is</div>
+                <div class="to-be-explanation">시차가 다른 도시의 사람들과 협업을 위해서 일일이 계산해야 한다</div>
+                <div class="to-be-explanation">여러 날의 많은 일정이 정리가 안 되어있다</div>
+                <div class="to-be-explanation">기존의 시계 앱은 현재 시간의 다른 나라 시간만 확인할 수 있다</div>
+            </div>
+        </div>
+    </div>
+	<div class="section" id="section3">
+        <div class="fourth-title">
+            <h1>저희 서비스를 체험해보세요</h1>
+        </div>
+        <div class=""></div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="../dist/fullpage.js"></script>
+<script type="text/javascript">
+	var myFullpage = new fullpage('#fullpage', {
+		sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+	});
+</script>
+</body>
+</html>
