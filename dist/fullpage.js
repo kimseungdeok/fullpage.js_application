@@ -2802,7 +2802,7 @@
 
       if (typeof getOptions().sectionsColor[index] !== 'undefined') {
         css(sectionElem, {
-          'background-color': getOptions().sectionsColor[index]
+          // 'background-color': getOptions().sectionsColor[index]
         });
       }
 
