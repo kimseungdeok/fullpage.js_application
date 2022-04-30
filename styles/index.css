@@ -211,8 +211,8 @@ mark {
 
 .fourth-title {
     font-size: 40px;
-    color: var(--gray);
     font-weight: bold;
+    padding-bottom: 150px;
 }
 .experience-section {
     display: flex;
