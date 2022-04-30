@@ -117,7 +117,7 @@
  #fp-nav.fp-left {
      left: 17px;
  }
- .fp-slidesNav{
+ .fp-slidesNav {
      position: absolute;
      z-index: 4;
      opacity: 1;
@@ -195,7 +195,8 @@
  #fp-nav ul li .fp-tooltip {
      position: absolute;
      top: -2px;
-     color: #fff;
+     color: black; 
+     /* 오른쪽 원 옆의 글씨 색 원래 #fff 였음 */
      font-size: 14px;
      font-family: arial, helvetica, sans-serif;
      white-space: nowrap;
